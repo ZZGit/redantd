@@ -36,9 +36,9 @@
     Checkbox.Group
     Cascader
     DatePicker
-    MonthPicker
-    RangePicker
-    WeekPicker
+    DatePicker.MonthPicker
+    DatePicker.RangePicker
+    DatePicker.WeekPicker
     Form
     Form.Item
     InputNumber
