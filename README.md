@@ -7,9 +7,7 @@
 * [Ant Design](https://ant.design/index-cn)
 
 ## 使用
-```
-[redantd "0.1.0"]
-```
+[![Clojars Project](https://img.shields.io/clojars/v/redantd.svg)](https://clojars.org/redantd)
 
 ## 使用前后代码比较
 
