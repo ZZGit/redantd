@@ -63,6 +63,7 @@
     Transfer
     TimePicker
     Upload
+    Upload.Dragger
     Avatar
     Badge
     Comment
