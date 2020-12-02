@@ -75,7 +75,7 @@
     Card.Meta
     Calendar
     Descriptions
-    Description.Item
+    Descriptions.Item
     Empty
     List
     List.Item
