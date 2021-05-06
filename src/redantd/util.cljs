@@ -24,7 +24,7 @@
   [value]
   (= (type value) cljs.core/PersistentArrayMap))
 
-(defn is-function (or goog/isFunction goog.functions/isFunction))
+(def is-function (or goog/isFunction goog.functions/isFunction))
 
 (defn- hiccup-form?
   "if hiccup form eg: [:div] [component]"
