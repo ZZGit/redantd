@@ -24,13 +24,15 @@
   [value]
   (= (type value) cljs.core/PersistentArrayMap))
 
+(defn is-function (or goog/isFunction goog.functions/isFunction))
+
 (defn- hiccup-form?
   "if hiccup form eg: [:div] [component]"
   [value]
   (and
    (= (type value) cljs.core/PersistentVector)
    (not (map-form? (first value)))
-   (or (goog/isFunction (first value))
+   (or (is-function (first value))
        (goog/isObject (first value))
        (= (type (first value)) cljs.core/Keyword))))
 
@@ -51,7 +53,7 @@
 (defn function-form?
   "if function form"
   [value]
-  (goog/isFunction value))
+  (is-function value))
 
 (defn recur-process-prop [[k v]]
   (let [value (cond
